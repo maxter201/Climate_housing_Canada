@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8dd118d56a1e42e3959a4afd3f58fa2d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8dd118d56a1e42e3959a4afd3f58fa2d" ></div>
+        
+</body>
+<script>    
+    
+            var map_8dd118d56a1e42e3959a4afd3f58fa2d = L.map(
+                "map_8dd118d56a1e42e3959a4afd3f58fa2d",
+                {
+                    center: [38.790496838, -96.735330392],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f13ad38718514dd7b97db1a4a2351500 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8dd118d56a1e42e3959a4afd3f58fa2d);
+        
+    
+            var marker_4c175c51d2004b9abe40f31e338b2d8b = L.marker(
+                [40.6943, -73.9249],
+                {}
+            ).addTo(map_8dd118d56a1e42e3959a4afd3f58fa2d);
+        
+    
+        var popup_d1f8244fc65b4145902489cbd654d7a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b4d932d877ab4d879102097248f7fb19 = $(`<div id="html_b4d932d877ab4d879102097248f7fb19" style="width: 100.0%; height: 100.0%;">	New York	 1981- 2010 	 RCP 4.5 Average: 24.1</strong></div>`)[0];
+            popup_d1f8244fc65b4145902489cbd654d7a9.setContent(html_b4d932d877ab4d879102097248f7fb19);
+        
+
+        marker_4c175c51d2004b9abe40f31e338b2d8b.bindPopup(popup_d1f8244fc65b4145902489cbd654d7a9)
+        ;
+
+        
+    
+    
+            marker_4c175c51d2004b9abe40f31e338b2d8b.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2735d0d5a4384e4197b15de9114ef76d = L.marker(
+                [34.1139, -118.4068],
+                {}
+            ).addTo(map_8dd118d56a1e42e3959a4afd3f58fa2d);
+        
+    
+        var popup_3089ecc42a5244519a1cd6f971b5d6b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9095371ae5024e7393990d9ee43712d3 = $(`<div id="html_9095371ae5024e7393990d9ee43712d3" style="width: 100.0%; height: 100.0%;">	Los Angeles	 1981- 2010 	 RCP 4.5 Average: 45.8</strong></div>`)[0];
+            popup_3089ecc42a5244519a1cd6f971b5d6b8.setContent(html_9095371ae5024e7393990d9ee43712d3);
+        
+
+        marker_2735d0d5a4384e4197b15de9114ef76d.bindPopup(popup_3089ecc42a5244519a1cd6f971b5d6b8)
+        ;
+
+        
+    
+    
+            marker_2735d0d5a4384e4197b15de9114ef76d.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a426699e74f408585cb3b715ddda1f3 = L.marker(
+                [41.8373, -87.6862],
+                {}
+            ).addTo(map_8dd118d56a1e42e3959a4afd3f58fa2d);
+        
+    
+        var popup_dd663d56ac364d4f8db517e6de2e3afc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f7a4f80b726f4be4b35fcf8a1459b084 = $(`<div id="html_f7a4f80b726f4be4b35fcf8a1459b084" style="width: 100.0%; height: 100.0%;">	Chicago	 1981- 2010 	 RCP 4.5 Average: 29.0</strong></div>`)[0];
+            popup_dd663d56ac364d4f8db517e6de2e3afc.setContent(html_f7a4f80b726f4be4b35fcf8a1459b084);
+        
+
+        marker_6a426699e74f408585cb3b715ddda1f3.bindPopup(popup_dd663d56ac364d4f8db517e6de2e3afc)
+        ;
+
+        
+    
+    
+            marker_6a426699e74f408585cb3b715ddda1f3.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0e480c7730484c6eb547428c46e3ef7d = L.marker(
+                [32.7936, -96.7662],
+                {}
+            ).addTo(map_8dd118d56a1e42e3959a4afd3f58fa2d);
+        
+    
+        var popup_39a4da8bda964a3f976e4af14c7f4277 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fbf3e333893441ed8a4d382c3ad2d7c2 = $(`<div id="html_fbf3e333893441ed8a4d382c3ad2d7c2" style="width: 100.0%; height: 100.0%;">	Dallas	 1981- 2010 	 RCP 4.5 Average: 47.9</strong></div>`)[0];
+            popup_39a4da8bda964a3f976e4af14c7f4277.setContent(html_fbf3e333893441ed8a4d382c3ad2d7c2);
+        
+
+        marker_0e480c7730484c6eb547428c46e3ef7d.bindPopup(popup_39a4da8bda964a3f976e4af14c7f4277)
+        ;
+
+        
+    
+    
+            marker_0e480c7730484c6eb547428c46e3ef7d.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_18a5aa47e0cd46a1bceb6e58605f7cf7 = L.marker(
+                [40.0077, -75.1339],
+                {}
+            ).addTo(map_8dd118d56a1e42e3959a4afd3f58fa2d);
+        
+    
+        var popup_2261e528272446518f3250d479bbb2b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_11b3a6763f9c41e68d4b387994aec898 = $(`<div id="html_11b3a6763f9c41e68d4b387994aec898" style="width: 100.0%; height: 100.0%;">	Philadelphia	 1981- 2010 	 RCP 4.5 Average: 29.1</strong></div>`)[0];
+            popup_2261e528272446518f3250d479bbb2b1.setContent(html_11b3a6763f9c41e68d4b387994aec898);
+        
+
+        marker_18a5aa47e0cd46a1bceb6e58605f7cf7.bindPopup(popup_2261e528272446518f3250d479bbb2b1)
+        ;
+
+        
+    
+    
+            marker_18a5aa47e0cd46a1bceb6e58605f7cf7.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0d5737ad1e064b54b12779b45cd9141a = L.marker(
+                [29.7863, -95.3889],
+                {}
+            ).addTo(map_8dd118d56a1e42e3959a4afd3f58fa2d);
+        
+    
+        var popup_7e0e81eead534ee8b219ab657e832541 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e7791687b00416090dfdb7003ff5e29 = $(`<div id="html_0e7791687b00416090dfdb7003ff5e29" style="width: 100.0%; height: 100.0%;">	Houston	 1981- 2010 	 RCP 4.5 Average: 47.9</strong></div>`)[0];
+            popup_7e0e81eead534ee8b219ab657e832541.setContent(html_0e7791687b00416090dfdb7003ff5e29);
+        
+
+        marker_0d5737ad1e064b54b12779b45cd9141a.bindPopup(popup_7e0e81eead534ee8b219ab657e832541)
+        ;
+
+        
+    
+    
+            marker_0d5737ad1e064b54b12779b45cd9141a.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_23e4f3aeab5f42d7b4246e7929221b99 = L.marker(
+                [38.9047, -77.0163],
+                {}
+            ).addTo(map_8dd118d56a1e42e3959a4afd3f58fa2d);
+        
+    
+        var popup_9dee517c10384bc08719c4f49428c1aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0cd1c889ed634d158edcbf99ac212e9a = $(`<div id="html_0cd1c889ed634d158edcbf99ac212e9a" style="width: 100.0%; height: 100.0%;">	Washington D.C	 1981- 2010 	 RCP 4.5 Average: 35.5</strong></div>`)[0];
+            popup_9dee517c10384bc08719c4f49428c1aa.setContent(html_0cd1c889ed634d158edcbf99ac212e9a);
+        
+
+        marker_23e4f3aeab5f42d7b4246e7929221b99.bindPopup(popup_9dee517c10384bc08719c4f49428c1aa)
+        ;
+
+        
+    
+    
+            marker_23e4f3aeab5f42d7b4246e7929221b99.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d619fbb8fcb544c6aa0fcffdabbb3967 = L.marker(
+                [25.7839, -80.2102],
+                {}
+            ).addTo(map_8dd118d56a1e42e3959a4afd3f58fa2d);
+        
+    
+        var popup_0772d378a89742f6911015c05b9b51f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2195133fe1f640268659136bcba4f472 = $(`<div id="html_2195133fe1f640268659136bcba4f472" style="width: 100.0%; height: 100.0%;">	Miami	 1981- 2010 	 RCP 4.5 Average: 59.2</strong></div>`)[0];
+            popup_0772d378a89742f6911015c05b9b51f4.setContent(html_2195133fe1f640268659136bcba4f472);
+        
+
+        marker_d619fbb8fcb544c6aa0fcffdabbb3967.bindPopup(popup_0772d378a89742f6911015c05b9b51f4)
+        ;
+
+        
+    
+    
+            marker_d619fbb8fcb544c6aa0fcffdabbb3967.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3af73df9c3214960b4e4eae9a8054252 = L.marker(
+                [33.7627, -84.4224],
+                {}
+            ).addTo(map_8dd118d56a1e42e3959a4afd3f58fa2d);
+        
+    
+        var popup_82a2fcd045b5405e97fff69c43b9330d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e09e86235cc418fb15edd29a88191ed = $(`<div id="html_4e09e86235cc418fb15edd29a88191ed" style="width: 100.0%; height: 100.0%;">	Atlanta	 1981- 2010 	 RCP 4.5 Average: 47.3</strong></div>`)[0];
+            popup_82a2fcd045b5405e97fff69c43b9330d.setContent(html_4e09e86235cc418fb15edd29a88191ed);
+        
+
+        marker_3af73df9c3214960b4e4eae9a8054252.bindPopup(popup_82a2fcd045b5405e97fff69c43b9330d)
+        ;
+
+        
+    
+    
+            marker_3af73df9c3214960b4e4eae9a8054252.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_83f97588d66e4ea3833570592f3519b2 = L.marker(
+                [42.3188, -71.0846],
+                {}
+            ).addTo(map_8dd118d56a1e42e3959a4afd3f58fa2d);
+        
+    
+        var popup_7bde4e174f984d819e1207c6144d42ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_447d849a95b4401684ddb549b265c051 = $(`<div id="html_447d849a95b4401684ddb549b265c051" style="width: 100.0%; height: 100.0%;">	Boston	 1981- 2010 	 RCP 4.5 Average: 28.1</strong></div>`)[0];
+            popup_7bde4e174f984d819e1207c6144d42ff.setContent(html_447d849a95b4401684ddb549b265c051);
+        
+
+        marker_83f97588d66e4ea3833570592f3519b2.bindPopup(popup_7bde4e174f984d819e1207c6144d42ff)
+        ;
+
+        
+    
+    
+            marker_83f97588d66e4ea3833570592f3519b2.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
